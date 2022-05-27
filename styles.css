@@ -1,0 +1,12 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+}
+
+html {
+    font-size: 10px;
+}
+
+p {
+    font-size: 1.5rem;
+}
