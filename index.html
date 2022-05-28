@@ -1,0 +1,91 @@
+<DOCTYPE! html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center">How do you think programming could change the world?</h1>
+                <p id="description">Thank you for taking the time to answer this survey</p>
+            </header>
+
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Insert your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">Age</label>
+                    <input id="number" type="number" name="age" class="form-control" placeholder="How old are you?" min="8" max="99" required>
+
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <p>Which is your current position now?</p>
+                    <select id="dropdown" class="form-controller" name="actual-position" required>
+                        <option disabled="" selected="" value="">Select one option</option>
+                        <option value="Student">Student</option>
+                        <option value="Full Time Job">Full Time Job</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>How much do you like programming?</p>
+                    <label>
+                        <input type="radio" name="user-response" class="input-radio" value="positive" checked/>A lot! Programming is fun! xD
+                    </label>
+                    <label>
+                        <input type="radio" name="user-response" class="input-radio" value="negative"/>Not that much :(
+                    </label>
+                    <label>
+                        <input type="radio" name="user-response" class="input-radio" value="neutral"/>I'm still learning... not so sure yet =P
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <p>What do you like most about coding?</p>
+                     <select id="most-like" name="mostLike" class="form-control" required>
+                       <option disabled selected value>Choose an option</option>
+                       <option value="building">Building projects</option>
+                       <option value="freedom">Freedom to create new things</option>
+                       <option value="transform">Transform your environment through technology</option>
+                    </select>
+                  </div>
+
+                <div class="form-group">
+                    <p>Which areas do you think are the most interesting ones?<span>(check multiple if more than one)</span></p>
+                    <label>
+                        <input type="checkbox" class="input-checkbox" name-="prefer" value="web-development"/>Web Development
+                    </label>
+                    <label>
+                        <input type="checkbox" class="input-checkbox" name="prefer" value="game-development"/>Game Development
+                    </label>
+                    <label>
+                        <input type="checkbox" class="input-checkbox" name="prefer" value="devops"/>DevOps
+                    </label>
+                    <label>
+                        <input type="checkbox" class="input-checkbox" name="prefer" value="machine-learning"/>Machine learning
+                    </label>
+                    <label>
+                        <input type="checkbox" class="input-checkbox" name="prefer" value="other"/>Other
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea class="input-textarea" placeholder="Insert your comments here"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button id="submit" type="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+        </body>        
+    </html>
+</DOCTYPE>
